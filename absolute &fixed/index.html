@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>ABSOLUTE & FIXED</title>
+<style>
+	body {
+		height: 2000px;
+	}
+	.container {
+		position: relative;
+		width: 600px;
+		height: 600px;
+		border: 10px solid green;
+
+	}
+	div {
+		width: 200px;
+		height: 200px;
+		margin: auto;
+
+	}
+	.satu {
+		background-color: lightblue;
+	}
+
+	.dua {
+		background-color: violet;
+		left: 0px;
+		top: 0px;
+/*		position: absolute;*/
+position: fixed;
+	}
+
+	.tiga {
+		background-color: gold;
+	}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="satu"></div>
+		<div class="dua"></div>
+		<div class="tiga"></div>
+	</div>
+
+</body>
+</html>
